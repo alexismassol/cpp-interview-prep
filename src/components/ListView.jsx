@@ -1,5 +1,5 @@
 /**
- * ListView.jsx — Mode liste : toutes les questions avec statut
+ * ListView.jsx - Mode liste : toutes les questions avec statut
  * Clic sur une ligne → passe en mode cards sur cette question
  */
 import { difficultyColor } from '../data/questions.js'

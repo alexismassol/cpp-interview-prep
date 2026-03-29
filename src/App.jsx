@@ -1,11 +1,11 @@
 /**
- * App.jsx — C/C++ Interview Prep
- * Stack : React 18, Vite — 100% client-side, aucun backend requis
+ * App.jsx - C/C++ Interview Prep
+ * Stack : React 18, Vite - 100% client-side, aucun backend requis
  *
  * Structure :
- *   Header    — titre, compteurs, sélecteur de mode
- *   Filters   — filtres par catégorie + bouton shuffle
- *   Content   — FlashCard | ListView | StatsView selon le mode actif
+ *   Header    - titre, compteurs, sélecteur de mode
+ *   Filters   - filtres par catégorie + bouton shuffle
+ *   Content   - FlashCard | ListView | StatsView selon le mode actif
  */
 import { useFlashcards } from './hooks/useFlashcards.js'
 import FlashCard  from './components/FlashCard.jsx'

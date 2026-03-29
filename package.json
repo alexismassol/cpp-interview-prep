@@ -1,7 +1,7 @@
 {
   "name": "cpp-interview-prep",
   "version": "1.0.0",
-  "description": "Interactive flashcard app for C/C++ technical interviews — embedded, memory, OOP, modern C++",
+  "description": "Interactive flashcard app for C/C++ technical interviews - embedded, memory, OOP, modern C++",
   "author": "Alexis MASSOL",
   "license": "SEE LICENSE IN LICENSE",
   "private": true,

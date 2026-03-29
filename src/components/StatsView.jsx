@@ -1,5 +1,5 @@
 /**
- * StatsView.jsx — Mode stats : progression par catégorie
+ * StatsView.jsx - Mode stats : progression par catégorie
  */
 import { questions, categoryColors } from '../data/questions.js'
 

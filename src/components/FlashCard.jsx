@@ -1,5 +1,5 @@
 /**
- * FlashCard.jsx — Carte interactive question/réponse
+ * FlashCard.jsx - Carte interactive question/réponse
  * Props : question, scores, currentIndex, filteredLength, onScore, onNavigate
  */
 import { categoryColors, difficultyColor } from '../data/questions.js'

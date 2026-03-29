@@ -1,5 +1,5 @@
 /**
- * CodeBlock.jsx — Affichage de code C/C++ avec coloration syntaxique légère
+ * CodeBlock.jsx - Affichage de code C/C++ avec coloration syntaxique légère
  * Colore : commentaires (gris), lignes ✅ OK (vert), lignes ❌ ERREUR (rouge)
  */
 export default function CodeBlock({ code }) {

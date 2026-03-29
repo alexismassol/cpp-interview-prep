@@ -1,12 +1,12 @@
 /**
- * questions.js — Base de données des questions C/C++ pour entretiens techniques
+ * questions.js - Base de données des questions C/C++ pour entretiens techniques
  *
  * Catégories :
- *   Mémoire       — malloc/free, RAII, smart pointers, const pointers
- *   Embedded      — volatile, bit manipulation, ISR, endianness
- *   C++ OOP       — virtual destructor, vtable, casts
- *   C++ Moderne   — move semantics, nullptr, constexpr
- *   Debug & Système — segfault, deadlock, concurrence
+ *   Mémoire       - malloc/free, RAII, smart pointers, const pointers
+ *   Embedded      - volatile, bit manipulation, ISR, endianness
+ *   C++ OOP       - virtual destructor, vtable, casts
+ *   C++ Moderne   - move semantics, nullptr, constexpr
+ *   Debug & Système - segfault, deadlock, concurrence
  *
  * Structure d'une question :
  *   { category, difficulty, question, answer, tip }
@@ -180,7 +180,7 @@ GPIOA_ODR |= (1 << LED_PIN);   // allumer LED
 GPIOA_ODR &= ~(1 << LED_PIN);  // éteindre LED
 GPIOA_ODR ^= (1 << LED_PIN);   // toggle LED
 \`\`\``,
-    tip: "SET=OR, CLEAR=AND NOT, TOGGLE=XOR — à savoir par cœur"
+    tip: "SET=OR, CLEAR=AND NOT, TOGGLE=XOR - à savoir par cœur"
   },
   {
     category: "Embedded",
@@ -188,7 +188,7 @@ GPIOA_ODR ^= (1 << LED_PIN);   // toggle LED
     question: "Quelles sont les règles à respecter dans une ISR ?",
     answer: `Une ISR (Interrupt Service Routine) doit être :
 
-**1. RAPIDE** — Le moins de code possible
+**1. RAPIDE** - Le moins de code possible
 • Pas d'opérations lentes (I2C, UART bloquant, printf...)
 • Pattern classique : setter un flag, traiter dans la main loop
 
@@ -375,7 +375,7 @@ public:
 \`\`\`
 
 **Rule of Zero** : si tes membres gèrent eux-mêmes leurs ressources (smart pointers, vector...) → ne définis aucun des 5.`,
-    tip: "Rule of Five ou Rule of Zero. Jamais à moitié — sinon copie/move cassée."
+    tip: "Rule of Five ou Rule of Zero. Jamais à moitié - sinon copie/move cassée."
   },
 
   // ═══════════════════════════════════════════════════════
@@ -505,7 +505,7 @@ auto f2 = [&](int x) { return x > threshold; };
 \`\`\`
 
 **Usage courant** : std::sort, std::for_each, callbacks, std::thread.`,
-    tip: "[=] copie tout, [&] capture tout par ref — attention à la durée de vie !"
+    tip: "[=] copie tout, [&] capture tout par ref - attention à la durée de vie !"
   },
 
   // ═══════════════════════════════════════════════════════
@@ -573,14 +573,14 @@ void transfert(Account& src, Account& dst) {
 **Solutions :**
 
 1. **Ordre d'acquisition fixe** (toujours locker dans le même ordre)
-2. **std::lock** (C++11) — verrouille plusieurs mutex atomiquement
+2. **std::lock** (C++11) - verrouille plusieurs mutex atomiquement
 \`\`\`cpp
 std::lock(src.mutex, dst.mutex); // ✅ deadlock-free
 std::lock_guard<std::mutex> la(src.mutex, std::adopt_lock);
 std::lock_guard<std::mutex> lb(dst.mutex, std::adopt_lock);
 \`\`\`
 3. **Try-lock avec timeout** (en RTOS)
-4. **Minimiser les sections critiques** — moins de locks = moins de risques`,
+4. **Minimiser les sections critiques** - moins de locks = moins de risques`,
     tip: "En RTOS embarqué : priority inversion + deadlock sont les 2 bugs concurrence classiques"
   },
   {
@@ -614,7 +614,7 @@ void main_loop() {
 }
 \`\`\`
 
-⚠️ **Ne jamais kicker le WDT dans une ISR** — si la boucle principale est bloquée mais l'ISR tourne encore, le WDT ne détecterait pas le problème.`,
+⚠️ **Ne jamais kicker le WDT dans une ISR** - si la boucle principale est bloquée mais l'ISR tourne encore, le WDT ne détecterait pas le problème.`,
     tip: "WDT = filet de sécurité ultime. Kicker dans main(), jamais dans une ISR."
   },
   {
@@ -630,7 +630,7 @@ Tâche M (moyenne) préempte L et empêche L de libérer le mutex
 → H attend indéfiniment à cause de M → inversion de priorité !
 \`\`\`
 
-**Exemple célèbre :** Mars Pathfinder (1997) — reset du système causé par priority inversion.
+**Exemple célèbre :** Mars Pathfinder (1997) - reset du système causé par priority inversion.
 
 **Solutions :**
 
@@ -661,7 +661,7 @@ SemaphoreHandle_t mutex = xSemaphoreCreateMutex(); // ✅
 \`\`\`cpp
 void foo() {
     int x = 5;        // stack
-    int arr[100];     // stack — 400 octets réservés
+    int arr[100];     // stack - 400 octets réservés
 } // libération automatique ici
 \`\`\`
 
@@ -669,10 +669,10 @@ void foo() {
 • Allocation dynamique : malloc/new
 • Taille variable, connue à l'exécution
 • Plus lent (recherche de bloc libre)
-• Libération manuelle — risque de fuite mémoire
+• Libération manuelle - risque de fuite mémoire
 
 \`\`\`cpp
-int* p = new int[1000]; // heap — alloué dynamiquement
+int* p = new int[1000]; // heap - alloué dynamiquement
 delete[] p;             // libération manuelle obligatoire
 \`\`\`
 

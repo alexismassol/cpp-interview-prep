@@ -164,7 +164,7 @@ GPIOA_ODR |= (1 << LED_PIN);   // allumer LED
 GPIOA_ODR &= ~(1 << LED_PIN);  // éteindre LED
 GPIOA_ODR ^= (1 << LED_PIN);   // toggle LED
 \`\`\``,
-    tip: "SET=OR, CLEAR=AND NOT, TOGGLE=XOR — à savoir par cœur"
+    tip: "SET=OR, CLEAR=AND NOT, TOGGLE=XOR - à savoir par cœur"
   },
   {
     category: "Embedded",
@@ -172,7 +172,7 @@ GPIOA_ODR ^= (1 << LED_PIN);   // toggle LED
     question: "Quelles sont les règles à respecter dans une ISR ?",
     answer: `Une ISR (Interrupt Service Routine) doit être :
 
-**1. RAPIDE** — Le moins de code possible
+**1. RAPIDE** - Le moins de code possible
 • Pas d'opérations lentes (I2C, UART bloquant, printf...)
 • Pattern classique : setter un flag, traiter dans la main loop
 
@@ -452,14 +452,14 @@ void transfert(Account& src, Account& dst) {
 **Solutions :**
 
 1. **Ordre d'acquisition fixe** (toujours locker dans le même ordre)
-2. **std::lock** (C++11) — verrouille plusieurs mutex atomiquement
+2. **std::lock** (C++11) - verrouille plusieurs mutex atomiquement
 \`\`\`cpp
 std::lock(src.mutex, dst.mutex); // ✅ deadlock-free
 std::lock_guard<std::mutex> la(src.mutex, std::adopt_lock);
 std::lock_guard<std::mutex> lb(dst.mutex, std::adopt_lock);
 \`\`\`
 3. **Try-lock avec timeout** (en RTOS)
-4. **Minimiser les sections critiques** — moins de locks = moins de risques`,
+4. **Minimiser les sections critiques** - moins de locks = moins de risques`,
     tip: "En RTOS embarqué : priority inversion + deadlock sont les 2 bugs concurrence classiques"
   }
 ];

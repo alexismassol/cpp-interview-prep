@@ -1,5 +1,5 @@
 /**
- * AnswerDisplay.jsx — Rendu Markdown-lite pour les réponses
+ * AnswerDisplay.jsx - Rendu Markdown-lite pour les réponses
  * Gère : blocs ```cpp, **gras**, `inline code`, bullets •→
  */
 import CodeBlock from './CodeBlock.jsx'

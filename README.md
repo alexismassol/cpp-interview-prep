@@ -19,9 +19,9 @@
 **C/C++ Interview Prep** est une SPA (Single Page Application) React 18 permettant de réviser les concepts C/C++ essentiels avant un entretien technique, avec un focus sur les systèmes embarqués (microcontrôleurs ARM, RTOS, registres GPIO, protocoles CAN/ISO 15118).
 
 3 modes d'utilisation :
-- **📇 Cards** — flashcards interactives (révèle la réponse, note ton niveau)
-- **📋 Liste** — vue d'ensemble de toutes les questions avec statut
-- **📊 Stats** — progression par catégorie avec barres de complétion
+- **📇 Cards** - flashcards interactives (révèle la réponse, note ton niveau)
+- **📋 Liste** - vue d'ensemble de toutes les questions avec statut
+- **📊 Stats** - progression par catégorie avec barres de complétion
 
 ---
 
@@ -108,11 +108,11 @@ cpp-interview-prep/
 
 - **20 questions** réparties sur 5 catégories, 3 niveaux de difficulté
 - **Filtrage** par catégorie (Tous / Mémoire / Embedded / C++ OOP / C++ Moderne / Debug & Système)
-- **Shuffle** — ordre aléatoire pour éviter la mémorisation séquentielle
-- **Scoring** — marquer chaque carte "Maîtrisé ✓" ou "À revoir ✗"
+- **Shuffle** - ordre aléatoire pour éviter la mémorisation séquentielle
+- **Scoring** - marquer chaque carte "Maîtrisé ✓" ou "À revoir ✗"
 - **Progression** barre par carte + statistiques par catégorie
 - **Navigation** clavier-friendly (boutons ← →)
-- **Mode liste** — vue d'ensemble et accès direct à une question
+- **Mode liste** - vue d'ensemble et accès direct à une question
 - **Coloration syntaxique** C++ dans les réponses (commentaires, ✅/❌)
 - **Tips mnémotechniques** sur chaque réponse
 - 100% client-side, fonctionne hors-ligne après premier chargement
@@ -121,12 +121,12 @@ cpp-interview-prep/
 
 ## Auteur
 
-**Alexis MASSOL** — Senior Software Engineer · Embedded Systems & Cloud Platforms
+**Alexis MASSOL** - Senior Software Engineer · Embedded Systems & Cloud Platforms
 
 ---
 
 ## Licence
 
-© 2026 Alexis MASSOL — Tous droits réservés.
+© 2026 Alexis MASSOL - Tous droits réservés.
 
 Projet portfolio de démonstration. Consultation et étude personnelle autorisées. Toute utilisation commerciale ou redistribution interdite. Voir [LICENSE](./LICENSE).

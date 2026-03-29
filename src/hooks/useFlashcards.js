@@ -1,5 +1,5 @@
 /**
- * useFlashcards.js — Hook principal gérant l'état de l'application
+ * useFlashcards.js - Hook principal gérant l'état de l'application
  *
  * Responsabilités :
  *   - Filtrage par catégorie
@@ -42,7 +42,7 @@ export function useFlashcards() {
 
   /**
    * Navigation avec animation légère (fade + translateY)
-   * @param {number} dir — +1 (suivante) ou -1 (précédente)
+   * @param {number} dir - +1 (suivante) ou -1 (précédente)
    */
   const navigate = (dir) => {
     setAnimating(true)
