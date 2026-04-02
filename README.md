@@ -16,6 +16,8 @@
 
 ## Aperçu
 
+| Card | Listes | Stats |
+|---|---|---|
 | ![Interface](assets/screenshots/Card-Demo1.png) | ![Streaming](assets/screenshots/Card-Demo2.png) | ![Sources](assets/screenshots/Card-Demo3.png) |
 
 ---
