@@ -14,6 +14,12 @@
 
 ---
 
+## Aperçu
+
+| ![Interface](assets/screenshots/Card-Demo1.png) | ![Streaming](assets/screenshots/Card-Demo2.png) | ![Sources](assets/screenshots/Card-Demo3.png) |
+
+---
+
 ## Présentation
 
 **C/C++ Interview Prep** est une SPA (Single Page Application) React 18 permettant de réviser les concepts C/C++ essentiels avant un entretien technique, avec un focus sur les systèmes embarqués (microcontrôleurs ARM, RTOS, registres GPIO, protocoles CAN/ISO 15118).
